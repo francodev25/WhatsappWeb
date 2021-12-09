@@ -77,8 +77,17 @@ function Sidebar() {
 export default Sidebar
 
 const Container = styled.div`
-  width: 300px;
+  width: 290px;
   border-right: 3px solid whitesmoke;
+  flex:.25;
+    overflow: scroll;
+    height: 100vh;
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    --ms-overflow-style:none;
+    scrollbar-width: none;
 `
 
 const Header = styled.div`
